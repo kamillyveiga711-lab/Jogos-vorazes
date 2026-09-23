@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercícios DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Exercícios DOM</h1>
+
+    <div class="box">
+        <h2 id="titulo1">Olá, Panem!</h2>
+        <button onclick="mudarTitulo()">Mudar título</button>
+    </div>
+
+    <div class="box">
+        <h2>Mudar Fundo</h2>
+        <button onclick="mudarFundo()">Mudar cor de fundo</button>
+    </div>
+
+    <div class="box">
+        <p id="textoCor">RUE.</p>
+        <button onclick="mudarCorTexto()">Mudar cor</button>
+    </div>
+
+    <div class="box">
+        <p id="textoEsconder">Que a sorte esteja sempre a seu favor, feliz jogos vorazes!!</p>
+        <button onclick="alternarTexto()">Mostrar/Esconder</button>
+    </div>
+
+    <div class="box">
+        <h2 id="contador">0</h2>
+        <button onclick="contar()">Adicionar</button>
+    </div>
+
+    <div class="box">
+        <input type="text" id="campoNome" placeholder="Digite seu nome">
+        <button onclick="mostrarNome()">Mostrar nome</button>
+        <h3 id="resultadoNome"></h3>
+    </div>
+
+    <div class="box">
+        <img id="minhaImagem" src="katniss-everdeen.jpg" width="150"><br>
+        <button onclick="trocarImagem()">Trocar imagem</button>
+    </div>
+
+    <div class="box">
+        <p id="textoAumentar" style="font-size: 16px;">Lembrem quem é o verdadeiro inimigo.</p>
+        <button onclick="aumentarTexto()">Aumentar texto</button>
+    </div>
+
+    <div class="box">
+        <button onclick="adicionarItem()">Adicionar item</button>
+        <ul id="minhaLista"></ul>
+    </div>
+
+    <div class="box painel">
+        <h2 id="painelTitulo" style="font-size: 24px;">Painel de Controle</h2>
+        <p id="painelTexto">O distrito 12 não existe mais.</p>
+
+        <button onclick="pMudarTitulo()">Mudar título</button>
+        <button onclick="pMudarFundo()">Mudar fundo</button>
+        <button onclick="pMudarTexto()">Mudar texto</button>
+        <button onclick="pAumentarTitulo()">Aumentar título</button>
+        <button onclick="pEsconderTexto()">Esconder texto</button>
+        <button onclick="pMostrarTexto()">Mostrar texto</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
